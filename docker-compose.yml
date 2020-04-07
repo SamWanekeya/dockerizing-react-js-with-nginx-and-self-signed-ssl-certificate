@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  dkrz_frt:
+    container_name: dockerized_frontend
+    image: dockerized_frontend_web
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: "always"
