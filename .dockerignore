@@ -1,0 +1,15 @@
+*/node_modules/
+*/build/
+*/.git/
+*/.circleci/
+
+.gitignore
+Dockerfile
+.editorconfig
+tslint.json
+tsconfig.json
+renovate.json
+README.md
+prettier.config.js
+LICENCSE
+jscpd.json
