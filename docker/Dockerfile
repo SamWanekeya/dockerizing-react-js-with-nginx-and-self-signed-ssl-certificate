@@ -14,12 +14,12 @@ RUN yarn install --silent --non-interactive --frozen-lockfile --ignore-optional
 COPY . .
 RUN PUBLIC_URL=/ yarn run build
 
-FROM nginx:1.17.9-alpine as app
+FROM nginx:1.18.0-alpine as app
 
 # Add bash
 RUN apk add --no-cache bash
 
-FROM debian:10.3-slim
+FROM debian:10.4-slim
 
 RUN apt-get update \
     && apt-get install -y nginx openssl \
