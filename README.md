@@ -17,4 +17,4 @@
 
 ### Bugs & Issues
 
-To report bugs (or any other issues), use the [issues page](https://github.com/Wanekeya/safe-secure-password-generator/issues).
+To report bugs (or any other issues), use the [issues page](https://github.com/SamWanekeya/dockerizing-react-js-with-nginx-and-self-signed-ssl-certificate/issues).
