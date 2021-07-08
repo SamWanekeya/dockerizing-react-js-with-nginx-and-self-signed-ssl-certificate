@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
+# safety switch, exit script if there's error.
 set -e
-docker-compose -f docker-compose.yml down -v --rmi local
+# safety switch, uninitialized variables will stop script.
+set -u
+docker-compose -f docker-compose.yml down --rmi=all --volumes --remove-orphans
