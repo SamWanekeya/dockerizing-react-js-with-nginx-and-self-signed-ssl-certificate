@@ -1,9 +1,10 @@
-version: "3.7"
+version: "3.9"
 
 services:
-  dkrz_frt:
-    container_name: dockerized_frontend
-    image: dockerized_frontend_web
+  reactapp_svc:
+    container_name: reactapp_svc
+    image: reactapp_svc_img
+    hostname: reactapp_svc
     build:
       context: .
       dockerfile: docker/Dockerfile
@@ -11,3 +12,8 @@ services:
       - "80:80"
       - "443:443"
     restart: "always"
+    volumes:
+      - reactapp_volume:/reactapp
+
+volumes:
+  reactapp_volume:

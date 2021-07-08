@@ -11,7 +11,7 @@
 ### Contributing
 
 1. Fork this repo and make changes in your own fork.
-2. Commit your changes and push to your fork `git push origin master`
+2. Commit your changes and push to your fork `git push origin main`
 3. Create a new pull request and submit it back to the project.
 
 
