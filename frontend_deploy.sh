@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
+# safety switch, exit script if there's error.
 set -e
-docker-compose -f docker-compose.yml up -d --build --remove-orphans
+# safety switch, uninitialized variables will stop script.
+set -u
+docker-compose -f docker-compose.yml build
+docker-compose -f docker-compose.yml down
+docker-compose -f docker-compose.yml up -d
