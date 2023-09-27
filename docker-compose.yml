@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
   reactapp_svc:
     container_name: reactapp_svc
